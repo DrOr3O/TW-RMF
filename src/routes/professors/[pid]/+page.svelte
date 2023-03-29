@@ -1,6 +1,9 @@
 <script lang="ts">
   import type { PageData } from "./$types";
 
+  import ProfessorPage from "../../../pages/ProfessorPage.svelte";
+
   export let data: PageData;
-  export const ssr = true;
 </script>
+
+<ProfessorPage professor={data.professor}/>
