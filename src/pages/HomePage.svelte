@@ -31,17 +31,5 @@
 </script>
 
 <Layout>
-  <!-- TODO: form fallack for no-JS users -->
-  <form>
-    <input type="text" name="query" id="query" bind:value={query} on:input={showSearchResult}/>
-  </form>
-  <output>
-    {#if professors.length === 0}
-      <p>Please enter something</p>
-    {:else}
-      {#each professors as prof}
-        <p>{prof.name}</p>
-      {/each}
-    {/if}
-  </output>
+  
 </Layout>
